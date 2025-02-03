@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhaja</title>
+    <style>
+        /* Gyaran jiki */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Zai tabbatar cewa komai yana cikin screen */
+            background: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            grid-template-rows: repeat(5, 1fr); /* 4 rows */
+            gap: 10px;
+            width: 90%;
+            max-width: 600px;
+            height: 90vh;
+        }
+
+        .box {
+            background: #008000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            background: #004d00;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Babban Container -->
+    <div class="container">
+        <div class="box" onclick="openSrc('asararu.html')">Asararu</div>
+        <div class="box" onclick="openSrc('audios.html')">Audio</div>
+        <div class="box" onclick="openSrc('https://example.com/videos')">Videos</div>
+        <div class="box" onclick="openSrc('hadimi.html')">Hadimi</div>
+        <div class="box" onclick="openSrc('qurani.html')">Fa'idojin Qur ani</div>
+        <div class="box" onclick="openSrc('shams.html')">Shamsul Ma'arif</div>
+        <div class="box" onclick="openSrc('hayaki.html')">Bakin Aiki</div>
+        <div class="box" onclick="openSrc('hisab.html')">Fa'idojin Hisab</div>
+        <div class="box" onclick="openSrc('fatiha.html')">Fa'idojin Fatiha</div>
+        <div class="box" onclick="openSrc('yasin.html')">Sirrukan Yasin</div>
+    </div>
+
+    <script>
+        function openSrc(url) {
+            window.location.href = url; // Zai kai kai tsaye zuwa URL
+        }
+    </script>
+
+</body>
+</html>

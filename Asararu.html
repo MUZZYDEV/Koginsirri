@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundin Sirri</title>
+    <style>
+        /* Gyaran jiki */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background: #008000;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        /* Babban container */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        /* Salo na kowane div */
+        .box {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20pxg;
+            text-align: left;
+            background: white;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Salo na Buttons */
+        .btn-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .btn {
+            background: #008000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 40%;
+        }
+
+        .btn:hover {
+            background: #004d00;
+        }
+
+        /* Iframe Window */
+        .iframe-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .iframe-box {
+            width: 90%;
+            background: white;
+            padding: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        iframe {
+            width: 350px;
+            height: 600px;
+            border: 3px solid red;
+            
+        }
+
+        .close-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>KUNDIN SIRRI</h1>
+        <p>Tsaya ka karanta, wannan manhajar an kirkireshi ne domin taimakawa yan uwa almajirai masu aikin makaranta.</p>
+        <p>Ku taimaka ku danna abunda akace ku danna ta wannan hanyar ce kadai zaku iya taimakawa masu kirkirar wannan app din domin su daurashi a playstore don ganin sauran yan uwa sun amfana.</p>
+    </header>
+
+    <!-- Babban shafi -->
+    <div class="container">
+        
+        
+        <!-- Div 1 -->
+        <div class="box">
+            
+            <h1>Jalabi Mai Karfi</h1>
+            <p>Ana rubuta wannan sirrin akan allo kafa 41 A wanke sai dai kuma ranar Alhamis ake shan rubutun da misalin karfe 6:30, ana yin rubutun na tsawon kwana 7, duk ranar da kasha rubutun sai kayi wuridin Ya Fattahu Ya Razzaqu Ya Wahabu Ya Ganiyu kafa 1871, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci, duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi1.jpg" alt="Hoto 1">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 2 -->
+        <div class="box">
+            
+            <h1>Jalabin Fattahu</h1>
+            <p>Ana rubuta wannan hatimin akan farin takarda sai a nade takardar a daura akan charbi ranar Alhamis karfe 6:30 na safe sai ayi wuridin Ya Fattahu kafa 34161, kwana 7 zaka zo kq bani labari, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci, duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi2.jpg" alt="Hoto 2">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 3 -->
+        <div class="box">
+            
+            <h1>Jalabin Dukiya</h1>
+            <p>Ana rubuta wannan hatimin akan takarda mara zane sai a rubuta wannan a tsakiya المال كثيرا, sai a nade takardar a daura akan charbi sai a soma wuridin Ya Ganiyu Agniyani kafa 7777 kullum har tsawon kwana 7, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci, duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi3.jpg" alt="Hoto 3">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 4 -->
+        <div class="box">
+            
+            <h1>Jalabin Fita Kunci</h1>
+            <p>Idan kana cikin kunci karasa yadda zakayi to ga wannam aikin sai a jarraba, ana rubuta wannan hatimin a farin takarda ko a kan yashi ko arubuta asha, idan a takarda aka rubuta to a nade takarda a daura akan charbi idan kuma sha akayi duka dai za'a zauna ne ayi wuridin Ya Muyassiru yassir kafa 2372 sai ayi wuridin Lailaha illa anta subhanaka inni kuntu minal zalimin Kafa 583, sannan kuma sai ayi wuridin Fa inna ma al usri yusra inna ma al usri yusra kafa 2372 sai a sake yin wuridin Lailaha illa anta subhanaka inni kuntu minal zalimin Kafa 583, bayan kagama sai ka fadawa Allah bukatarka aikin ana yinshi ne na tsawon kwana 7. izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci, duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi4.jpg" alt="Hoto 1">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 5 -->
+        <div class="box">
+            
+            <h1>Dafa'i Mai Girma</h1>
+            <p>Wallahi wannan dafa'ine mai karfin gaske in kasan makiya sun sakaka a gaba to ka jarraba wannan sirrin, yadda ake aikin ana rubuta wannan kafa 41 asha kafun a fara aikin ranar talata ake aikin anayin wuridin Wannan ayar ورد الله الذين كفروا بغيظهم لم ينالوا خيرا وكفى الله المؤمنين القتال وكان الله قويا عزيزا kafa 1114 sai kuma ayi wuridin ya muntaqimu kafa 5631 sai wuridin ya hayyu dafi ( ياحى دافع) kafa 5631. ranar talata ake aikin karfe 6:30 na safe ko 1:30 na rana ko 8:30 na dare ko 3:30 na dare wannan sirrin yanada kyau kwana 7 ake aikin, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi5.jpg" alt="Hoto 1">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 6 -->
+        <div class="box">
+            
+            <h1>Dafa'i Mai Rangwangwan</h1>
+            <p>Wannan yana daya daga cikin Dafa'in da manyan mutane ko ince manyan malamai suke aikatawa yanada karfi sosai koda wasa ba,a wasa dashi, yadda ake aikin ranar talata lokacin marrikh sune 6:30am ko 1:25:pm ko 8:30pm ko 3:30am za,a zauna ayi wuridin tabbat yada kafa 611 sai سيهزم الجمع ويولون الدبر kafa 111, sai kuma ayi alamtara kafa 1113 sai ورد الله الذين كفروا بغيظهم لم ينالوا خيرا وكفى الله المؤمنين القتال وكان الله قويا عزيزا kafa 5631, sai kuma li,ilafi kafa 531 sai kuma والله يعصمك من الناس kafa 95 aikin ana yinshi ne na tsawon kwana bakwai sai a roki Allah kariya, hmmm mutum ya gwada tabaka, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi6.jpeg" alt="Hoto 6">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 7 -->
+        <div class="box">
+            
+            <h1>Dafa'i Mai Zafi</h1>
+            <p>Wannan dafa'i ne kuma jalabi ne ba yawa sai zafi Wallahi duk wanda yake wannan sirrin duk bayan wata uku babushi babu shiga kunci kuma zai samu kariya daga makiya, ana fara aikin ranar talata lokacin marrikh (nayi bayanin lokutan a sirrukan baya), sai ayi wuridin استغفرالله، حسبناالله، لااله الاالله، لاحول ولاقوة الابالله
+            Ma ana (Astagfirullah, Hasbunallah, Lailaha illallah, Lahaula walaquwata illa billah) kafa 6,007,401 maana kafa (milyan shida da kafa duba bakwai da daya), ba lokaci daya ake aikin ba zaka iya yin wata biyu ko uku kana aikin amma ake yin adadi mai yawa, kuma ko tafiya kakeyi ko me kakeyi zaka iya yin wuridib dan Allah ku jarraba kuzo ku bani labari, aikin sai rijalul gaibi, wannan aikin fa har hadimai suna bin mutum kuma daga lokacin da yayi nisa a aikin zai fara jin kamar ana kara masa karfi zaiji zuciyarshi tana bugawa, zaiji kamar ana motsi a inda yake to hadiman aikin ne, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi7.jpeg" alt="Hoto 7">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 8 -->
+        <div class="box">
+            
+            <h1>Ibdali Mai Girma</h1>
+            <p>Ana rubuta Fatiha kafa 7 amma duk ayar fatihar za'a rubuta ayatul kurshiyu shi kuma ayatul kursiyun za,a za a bude duk hakurin shi sai a rubuta wannan aciki فلما القوا قال موسى ما جئتم به السحر ان الله سيبطله ان الله لا يصلح عمل المفسدين ku kula da kyau ha kurin (ه) ayatul kursiyyu guda 9 ne, kar ayi mistake in mutum bai fahimta ba yayi mana magana ta layin mu, bayan an gama sai a wanke a saka kaikayi koma kan mashekiya da garin habbatussauda da kuma garin kainuwa asha, ana fara aikin ranar Alhamis a lokacin mushtari, kwana 7 ake sirrin wannan sirrin yanada karfi a kula da kyau, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi8.jpeg" alt="Hoto 8">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 9 -->
+        <div class="box">
+            
+            <h1>Ibdali Mai Kyau</h1>
+            <p>Wannan Sirrin koda an samu wani ya kawo maka complain akan yanaso a warware masa asiri to wannan hatimin Ana rubutashi akan takarda mara zane, a tsakiyar hatimin sai ka rubuta sunanshi, ka nade layar ka daura akan charbi kayi wuridin wannan ayar فلما القوا قال موسى ما جئتم به السحر ان الله سيبطله ان الله لا يصلح عمل المفسدين kafa 15827 kwana 7, ana fara aikin ranar Alhamis ko asabar ko talata a lokutansu, mutum zai iya yiwa kanshi kuma zai iya yiwa wani, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi9.jpg" alt="Hoto 9">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 10 -->
+        <div class="box">
+            
+            <h1>Ibdali Waqadimna</h1>
+            <p>Ana rubuta wannan sirrin akan farin takarda sai ayi a saka sunan wanda yake fama da asiri a jikin shi a tsakiyar hatimin, sai a nade takardar ayi wurudin وقدمنا الى ما عملوا من عمل فجعلنه هباء منثورا kafa 22395 kullum tsawon kwana 7, sai a roki Allah ya warware sihirin insha Allahu za'a dace, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi10.jpg" alt="Hoto 1">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 11 -->
+        <div class="box">
+            
+            <h1>Ibdalu Sihir</h1>
+            <p>Kullum har tsawon kwana 14 ana rubuta wayan nan ayoyin ko wanne kafa 7 
+            ءامن الرسول بما انزل اليه من ربه والمؤمنون كل ءامن بالله وملئكته وكتبه ورسله لا نفرق بين احد من رسله وقالوا سمعنا واطعنا غفرانك ربنا واليك المصير <br><br>
+ الله لا اله الا هو الحى القيوم لا تاخذه سنة ولا نوم له ما فى السموت وما فى الارض من ذا الذى يشفع عنده الا باذنه يعلم ما بين ايديهم وما خلفهم ولا يحيطون بشيء من علمه الا بما شاء وسع كرسيه السموت والارض ولا يءوده حفظهما وهو العلى العظيم <br><br>
+  لقد جاءكم رسول من انفسكم عزيز عليه ما عنتم حريص عليكم بالمؤمنين رءوف رحيم فان تولوا فقل حسبى الله لا اله الا هو عليه توكلت وهو رب العرش العظيم<br><br>
+  فلما القوا قال موسى ما جئتم به السحر ان الله سيبطله ان الله لا يصلح عمل المفسدين <br><br>
+وقدمنا الى ما عملوا من عمل فجعلنه هباء منثورا <br><br>
+وقل جاء الحق وزهق البطل ان البطل كان زهوقا <br><br>
+فغلبوا هنالك وانقلبوا صغرين. <br><br>
+ليحق الحق ويبطل البطل ولو كره المجرمون <br>
+sai ayi saka kainuwa da garin habba aciki duk sanda za'a sha rubutun, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.
+
+
+            </p>
+            <img src="/img/jalabi11.png" alt="Hoto 11">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 12 -->
+        <div class="box">
+            
+            <h1>Ibdali Mai Kyau</h1>
+            <p>Wannan sirrin inbdali ne mai kyau kwarai ana rubuta wannan hatimin kafa 41 ko 7 kullum har tsawon kwana 7 ko 14 in za'a sha a saka garin habba da garin kaikayi da garin habba aciki insha Allah za,a ji dadin shi, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi12.jpg" alt="Hoto 12">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 13 -->
+        <div class="box">
+            
+            <h1>Firraqu</h1>
+            <p>Wannan kuma firraqu ne mai zafin gaske, ana rubuta wannan hatimin akan takarda sai a saka sunan wayanda akeso ayi musu firraqu daya yana ganin sama daya kuma yana ganin kasa a tsakiyar hatimin, bayan haka sai ayi wuridin والقينا بينهم العدوة والبغضاء الى يوم القيمة daidai nan kafa 2545 sai kuma tabbat yada kafa 211 kullum tsawon kwana 7 ake aikin ranar asabar sa'ar zuhal ake aikin, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi13.jpg" alt="Hoto 13">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 14 -->
+        <div class="box">
+            
+            <h1>Firraqu Mai Kyau</h1>
+            <p>Ana rubuta wannan hatimin akan takarda inda aka rubuta namiji sunan namiji za a saka inda kuma aka rubuta mace kuma anan za,a rubuta sunan mace, bayan an rubuta sai ayi laya a daura akan charbi hallau zaayi wuridin والقينا بينهم العدوة والبغضاء الى يوم القيمة daidai nan kafa 2545 sai kuma tabbat yada kafa 211 ranar asabar ake aikin a saar zuhal aji tsoron Allah, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi14.jpg" alt="Hoto 14">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 15 -->
+        <div class="box">
+            
+            <h1>Farin jini</h1>
+            <p>Ana rubuta wannan hatimin kafa 41 kullum sai a wanke a raba rubutun gida biyu, kashin farko a asha ranar juma'a, kashi na biyu kuma a saka turaren binta sudan aciki kullum ake shafawa a jiki, insha Allahu za,a dace, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi15.jpg" alt="Hoto 15">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Iframe Modal -->
+    <div class="iframe-container" id="iframeContainer">
+        <div class="iframe-box">
+            <button class="close-btn" onclick="closeIframe()">X</button>
+            <iframe id="iframeBox"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openIframe(url) {
+            document.getElementById("iframeBox").src = url;
+            document.getElementById("iframeContainer").style.display = "flex";
+        }
+
+        function closeIframe() {
+            document.getElementById("iframeContainer").style.display = "none";
+            document.getElementById("iframeBox").src = "";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiomack + Makulli</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .player-container {
+            background: white;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative;
+            text-align: center;
+        }
+        .player-container.locked iframe {
+            filter: blur(5px); /* Idan an kulle, sai ya zama blur */
+            pointer-events: none; /* Hana dannawa */
+        }
+        iframe {
+            width: 100%;
+            height: 252px;
+            border: none;
+        }
+        .locked-message {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .unlock-button {
+            display: block;
+            margin: 10px auto 0;
+            padding: 8px 16px;
+            font-size: 14px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .unlock-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Div na farko a bayyane -->
+        <div class="player-container">
+            <iframe src="https://audiomack.com/embed/asararuzallah/song/sirrin-dafai-dan-kariya" scrolling="no" width="100%" height="252" frameborder="0" title="SIRRIN DAFA'I DAN KARIYA"></iframe>
+        </div>
+
+        <!-- Sauran divs da aka kulle -->
+        <div class="player-container locked" data-id="1">
+            <iframe src="https://audiomack.com/embed/song/wizkid/essence-ft-tems" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="1">Danna Nan Don Bude Sirrin</button>
+        </div>
+
+        <div class="player-container locked" data-id="2">
+            <iframe src="https://audiomack.com/embed/song/davido/fall" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="2">Danna Nan Don Bude Sirrin</button>
+        </div>
+
+        <div class="player-container locked" data-id="3">
+            <iframe src="https://audiomack.com/embed/song/olamide/infinity-ft-omah-lay" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="3">Danna Nan Don Bude Sirrin</button>
+        </div>
+
+        <div class="player-container locked" data-id="4">
+            <iframe src="https://audiomack.com/embed/song/tems/free-mind" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="4">Danna Nan Don Bude Sirrin</button>
+        </div>
+
+        <div class="player-container locked" data-id="5">
+            <iframe src="https://audiomack.com/embed/song/fireboydml/peru" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="5">Danna Nan Don Bude Sirrin</button>
+        </div>
+
+        <div class="player-container locked" data-id="6">
+            <iframe src="https://audiomack.com/embed/song/joeboy/baby" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="6">Danna Nan Don Bude Sirrin</button>
+        </div>
+        <div class="player-container locked" data-id="7">
+            <iframe src="https://audiomack.com/embed/song/joeboy/baby" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="7">Danna Nan Don Bude Sirrin</button>
+        </div>
+        <div class="player-container locked" data-id="8">
+            <iframe src="https://audiomack.com/embed/song/joeboy/baby" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="8">Danna Nan Don Bude Sirrin</button>
+        </div>
+        <div class="player-container locked" data-id="9">
+            <iframe src="https://audiomack.com/embed/song/joeboy/baby" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="9">Danna Nan Don Bude Sirrin</button>
+        </div>
+        <div class="player-container locked" data-id="10">
+            <iframe src="https://audiomack.com/embed/song/joeboy/baby" scrolling="no"></iframe>
+            <div class="locked-message">
+                Idan kanason sauraran wannan sirrin sai ka danna wannan button din na ƙasa.
+            </div>
+            <button class="unlock-button" data-id="10">Danna Nan Don Bude Sirrin</button>
+        </div>
+
+    </div>
+
+    <script>
+        // Function din bude div guda daya kacal bayan danna button dinshi
+        function unlockSingleDiv(event) {
+            event.preventDefault(); // Hana kowane event na yanar gizo da zai iya faruwa
+
+            let button = event.target; // Dauko button din da aka danna
+            let divId = button.getAttribute("data-id"); // Samu ID din div din da ke da button din
+            let divToUnlock = document.querySelector(`.player-container[data-id="${divId}"]`);
+
+            // Bude link a sabon tab
+            window.open('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a', '_blank');
+
+            // Bude div daya kacal da aka danna button dinsa
+            divToUnlock.classList.remove("locked");
+        }
+
+        // Dauko duk button din unlocking
+        let unlockButtons = document.querySelectorAll(".unlock-button");
+
+        // Saka event listener ga kowane button
+        unlockButtons.forEach(button => {
+            button.addEventListener("click", unlockSingleDiv);
+        });
+    </script>
+
+</body>
+</html>

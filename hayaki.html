@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ha">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundin Sirri</title>
+    <style>
+        /* Gyaran jiki */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background: #008000;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        /* Babban container */
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        /* Salo na kowane div */
+        .box {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20pxg;
+            text-align: left;
+            background: white;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Salo na Buttons */
+        .btn-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .btn {
+            background: #008000;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 40%;
+        }
+
+        .btn:hover {
+            background: #004d00;
+        }
+
+        /* Iframe Window */
+        .iframe-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .iframe-box {
+            width: 90%;
+            background: white;
+            padding: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        iframe {
+            width: 350px;
+            height: 600px;
+            border: 3px solid red;
+            
+        }
+
+        .close-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>KUNDIN SIRRI</h1>
+        <p>Tsaya ka karanta, wannan manhajar an kirkireshi ne domin taimakawa yan uwa almajirai masu aikin makaranta.</p>
+        <p>Ku taimaka ku danna abunda akace ku danna ta wannan hanyar ce kadai zaku iya taimakawa masu kirkirar wannan app din domin su daurashi a playstore don ganin sauran yan uwa sun amfana.</p>
+    </header>
+
+    <!-- Babban shafi -->
+    <div class="container">
+        
+        
+        <!-- Div 1 -->
+        <div class="box">
+            
+            <h1>Hayakin Soyayya</h1>
+            <p>Duk wanda yake so duk inda ya shiga mata suke sha'awar shi, Shaawa ta alaqa bawai soyayya ba, to ya hada wayan nan hayakin in baka samu ba, kayi magana zamu samar maka 08109934185<br><br>
+           1. Udul Salib (عود الصليب)<br>
+           2. Udul Nid [turaren tsinke mai kamshi] (عود ند)<br>
+           3. Miqlul Azraq (مقل ازراق) <br> 
+           4. Jama jam tamarul hindi (wata tsamiyace da ake samu a india جماجم تمر الهندى)<br><br>
+           A hadesu wuri daya sai ake hayaki dashi.
+          
+           
+           
+           
+           </p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 2 -->
+        <div class="box">
+            
+            <h1>Hayakin Alkairi</h1>
+            <p>Duk wanda yakesan Alkairai suke shigo masa ko kuma zaiyi wani aiki na alkairi na sirri yayi amfani da wayan nan hayakin<br>
+            1. Milhu [gishiri](ملح)<br>
+            2. Miski gari (مسك)<br>
+            3. Anbar (عنبر)<br>
+            4. Harmal (حرمل)<br><br>
+            Wayan nan hadin sunada kyau in bazaka iya hadawa ba zamu hada maka 08109934185.
+            </p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 3 -->
+        <div class="box">
+            
+            <h1>Hayakin Damuwa</h1>
+            <p>Idan mutum yana cikin damuwa kuma baya jin dadin duniyar ga matsaltsalu sunyi yawa to ya hada wannan hadin<br>
+            1. Maramiya (مريمية)<br>
+            2. Babunaj (بابونج)<br>
+            3. Milhu gishiri kenan (ملح)<br><br>
+            A hade su gu daya ake hayaki dasu.                                 
+            </p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 4 -->
+        <div class="box">
+            
+            <h1>Hayakin Mayu Mai Karfi</h1>
+            <p>Idan mayu suka saka ku a gaba to ku hada wannan hadin insha Allahu za'a dace, idan kuma bazaku iya hadawa ba, kuyi mun magana ta whatsapp 08109934185 muna hadawa.<br>
+            1. Harmal (حرمل)<br>
+            2. Milhu gishiri kenan (ملح)<br>
+            3. Black pepper Mosoro (فلفل اسود)<br>
+            idan aka hada sai ake hayaki dashi ko ake hayaka gida insha Allahu zaa dace.
+             
+            
+            </p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 5 -->
+        <div class="box">
+            
+            <h1>Hayakin Jalabin Aljanu</h1>
+            <p>Idan ka hada wannan hayakin kana aiki dashi insha Allahu Aljanu zasu ke yawan nemanka suke aiki dakai.<br>
+            1. Jinin Tattabara (دم الحمام)<br>
+            2. Jinin Kerkeci (دم الذئب)<br>
+            3. Bawon tafarnuwa (قشر الثوم)<br>
+            4. Bawon Albasa (قشر البصل)<br>
+            5. Jin Al'ada (دم الحيض)<br>
+            6. Kashin tattabara (زبل الحمام)<br><br>
+            Idan zaayi aikin aljanu ko kuma anason aljanu suyi muamala da mutum a ke amfani da wannan hadin.                        
+            </p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 6 -->
+        <div class="box">
+            
+            <h1>Hayakin Aljanu</h1>
+            <p>Masu fama da aljanu yanada kyau ace sun hada wannan hayakin insha Allahu zaa samu sauki.<br>
+            1. Tafarnuwa<br>
+            2. tazargade<br>
+            3. kajiji<br>
+            4. Binta sudan<br>
+            5. Gishiri kadan<br>
+            6. habbatussauda <br>
+            7. man gelo<br>
+            8. man juda<br><br>
+            Wannan shine zaa hada gaba daya ake hayaki dasu insha Allahu zaa dace.                       
+            </p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 7 -->
+        <div class="box">
+            
+            <h1>Hayakin Warware Sihiri Wanda Aka Binne A Gida</h1>
+            <p>Wannan idan kana zargin akwai sihiri a gida to ka hada wayan nan abubuwan, da farko ana samun ma'ul wardi, milhul kashan ملح الجشن، sai kuma harmal sai a karanta musu wayannan ayoyin <br>
+            قال موسى ما جئتم به السحر ان الله سيبطله ان الله لا يصلح عمل المفسدين.<br>
+            ولا يفلح الساحر حيث اتى<br>
+            sai kuma والعمل قد بطل وال عقد انحل sai kuma ayatul kursiyu dukan su kafa 21 sai ake fesawa ko yayya fawa a gida insha Allahu zaa ji dadinshi
+            
+            </p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 8 -->
+        <div class="box">
+            
+            <h1>Hadin Jalabin maza</h1>
+            <p>wacce takeson maza suke binta sosai duk namijin da ya ganta yaji yana sonta to ta jarraba wannan, ana samun faratun zakara na hagu sai a hadasu gu daya ayi laya dasu sai ta rataya su insha Allahu zaa dace</p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 9 -->
+        <div class="box">
+            
+            <h1>Matsalar Fata</h1>
+            <p>Akwai wayanda zakaga fatarsu tayi fari musamman bakin su da hancin su sai kaga mutum ya zama kala biyu, wannan matsalar da turanci muna kiranta da VITILIGO duk mai irin wannan matsalar ga magani, ana samun Tafarnuwa sai a konata har sai ta zama toka sai a debi tokar wannan tafarnuwar sai a kwaba da zuma ake shafawa mai wannan matsalar insha Allahu zaa dace.</p>
+            
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 10 -->
+        <div class="box">
+            
+            <h1></h1>
+            <p>Idan aka kawo maka complain akan ma'auratan da basa zaman lafiya to ga wani aiki ka jarraba musu, da farko zakayi alwala ka tabbata kanada tsarki ranar lahadi, sai ka fiskanci Alkibla ka samu wani abun ci sai ka tofa musu Suratul Muzammil kafa 9 a abincin bayan ka gama sai a basu abincin suci insha Allahu zakaga ikon Allah amma aikin in zaayi sai ayi da niyar samun daidaituwa da soyayya tsakanin wane da wance</p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 11 -->
+        <div class="box">
+            
+            <h1>Hisabin Korar Mugun Makwabci</h1>
+            <p>Allah ya isa, Allah ya isa duk wanda ya aikata wannan sirrin ta hanyar da bata dace ba, Allah ya isa, yadda ake aikin shine ana yin azumi sannan ka tabbata kanada tsarki sai kayi wuridin wannan ismin (طوران) adadinshi 266, insha Allah zakaga biyan bukata wannan ismin yanada karfin gaske sabada maanar ismin shine ياحي يامحي sannan yana dauke da hadimi mai zafin gaske wato صفصفيائيل saboda haka a kiyaye aikin sai da hakki, in kuma baka iya kama barawo ba shi sai ya kamaka, Allah ya sawwake.</p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 12 -->
+        <div class="box">
+            
+            <h1>Hisabin Yara Masu Fitsarin Kwance</h1>
+            <p>Duk wanda danshi yake yawan yin fitsarin kwance ga wani sirri a jarraba, da farko ana rubuta wayan nan harfofin <br>
+            د ع ب م ح ر ب ة د ل ع <br>
+            لل م ع ح ب م ح م د ة <br>
+            و ب ل ع م ب غ م ر ة <br>
+            ح ب ذ ع ب م ح ة ب ة ز م <br>
+            ana rubuta shi kafa bakwai sai a bawa yaron da yake fitsarin kwance yasha kafun yayi bacci fatan nasara.
+            
+            </p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 13 -->
+        <div class="box">
+            
+            <h1>Hisabin Samun Nasara Akan Makiya 2</h1>
+            <p>Da farko dai wannan sirrin babban sirri ne kuma yana daya daga cikin sirrukan da nake kauna har a raina wallahi, yadda ake aikin shine ana karanta suratil kausar kafa 300 bayan ka gama karantawa sai ka karanta wannan adduar <br>
+            اللهم منزل الكتاب و منشيء السحاب هازم الاحزاب ادرء بك فى نحور الاعداء واستكفى بك البلاء <br>
+            sannan sai kace حم kafa 7 sannan saikace فسيكفيكهم الله وهو السميع العليم ولا حول ولاقوة الا باالله العلى العظيم اللهم اكفنا السوء بماشئت كيف شئت اللهم عليك بهم فنهم لا يعجزوك, wannan shine Sirrin Allah yasa mu dace, 
+            </p>
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 14 -->
+        <div class="box">
+            
+            <h1>Firraqu Mai Kyau</h1>
+            <p>Ana rubuta wannan hatimin akan takarda inda aka rubuta namiji sunan namiji za a saka inda kuma aka rubuta mace kuma anan za,a rubuta sunan mace, bayan an rubuta sai ayi laya a daura akan charbi hallau zaayi wuridin والقينا بينهم العدوة والبغضاء الى يوم القيمة daidai nan kafa 2545 sai kuma tabbat yada kafa 211 ranar asabar ake aikin a saar zuhal aji tsoron Allah, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi14.jpg" alt="Hoto 14">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+        <!-- Div 15 -->
+        <div class="box">
+            
+            <h1>Farin jini</h1>
+            <p>Ana rubuta wannan hatimin kafa 41 kullum sai a wanke a raba rubutun gida biyu, kashin farko a asha ranar juma'a, kashi na biyu kuma a saka turaren binta sudan aciki kullum ake shafawa a jiki, insha Allahu za,a dace, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
+            <img src="/img/jalabi15.jpg" alt="Hoto 15">
+            <div class="btn-container">
+                <button class="btn" onclick="openIframe('https://www.profitablecpmrate.com/ajeu8dam8?key=d8533d9b6d7b971c48203472a8e7b13a')">Danna wannan shine izinin sirrin</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Iframe Modal -->
+    <div class="iframe-container" id="iframeContainer">
+        <div class="iframe-box">
+            <button class="close-btn" onclick="closeIframe()">X</button>
+            <iframe id="iframeBox"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openIframe(url) {
+            document.getElementById("iframeBox").src = url;
+            document.getElementById("iframeContainer").style.display = "flex";
+        }
+
+        function closeIframe() {
+            document.getElementById("iframeContainer").style.display = "none";
+            document.getElementById("iframeBox").src = "";
+        }
+    </script>
+
+</body>
+</html>
