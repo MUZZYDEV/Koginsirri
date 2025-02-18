@@ -492,9 +492,33 @@ sai ayi saka kainuwa da garin habba aciki duk sanda za'a sha rubutun, izinin wan
         </div>
 
     </div>
-
+<!-- Ads Notification Container -->
+  <div class="ads-notification" id="adsNotification">
+    <h4>Advertisement</h4>
+    <iframe id="adIframe"></iframe>
+  </div>
     
+window.onload = function () {
+      const adsNotification = document.getElementById('adsNotification');
+      const adIframe = document.getElementById('adIframe');
+      const closeAdButton = document.getElementById('closeAd');
 
+      // Show the ad notification after 20 seconds
+      setTimeout(() => {
+        adsNotification.style.display = 'block';
+        adIframe.src = "https://www.profitablecpmrate.com/iktpfghwih?key=d310aff21043395ded130ef276e624fb"; // Load the ad URL into iframe
+
+        // Enable the close button after 10 seconds
+        setTimeout(() => {
+          closeAdButton.disabled = false; // Enable the close button
+        }, 1000); // 10 seconds
+      }, 1000); // 20 seconds delay
+
+      // Close the ad notification when the close button is clicked
+      closeAdButton.addEventListener('click', function () {
+        adsNotification.style.display = 'none';
+      });
+    };
     
     
     <script type='text/javascript' src='//yapabbreviate.com/bf/21/74/bf217460656c45ef07901a63c2ac6cad.js'></script>
