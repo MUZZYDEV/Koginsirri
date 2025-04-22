@@ -72,6 +72,54 @@
         img{
             Width: 345px;
         }
+        .modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .modal-header {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      color: white;
+      text-align: center;
+    }
+    .modal-content iframe {
+      width: 400px;
+      height: 650px;
+      border: none;
+    }
+    .countdown {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 18px;
+      z-index: 10000;
+    }
+    .modal-close {
+      position: absolute;
+      bottom: 30px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: none;
+      z-index: 10000;
+    }
     </style>
 </head>
 <body>
@@ -90,6 +138,50 @@
         <p style="font-weight: 250; font-size: 15px; text-align: center;">By Muawiya Muzzy   |  25 Feb 2025<br> All Right Reserved</p>
         
     </div>
+    <div class="modal" id="rewardModal">
+  <div class="modal-header">
+    This is an ads! Wannan talla ne.
+  </div>
+  <div class="modal-content">
+    <iframe src="https://yapabbreviate.com/iktpfghwih?key=d310aff21043395ded130ef276e624fb" allow="autoplay"></iframe>
+  </div>
+  <div class="countdown" id="countdown">20</div>
+  <button class="modal-close" id="closeBtn" onclick="closeModal()">Rufe talla</button>
+</div>
+
+<script>
+  let modal = document.getElementById('rewardModal');
+  let countdownElement = document.getElementById('countdown');
+  let closeBtn = document.getElementById('closeBtn');
+  let countdownTime = 15;
+  let repeatInterval = 40000; // 40 seconds
+
+  function startModalCountdown() {
+    countdownTime = 15;
+    modal.style.display = 'flex';
+    closeBtn.style.display = 'none';
+    countdownElement.innerText = countdownTime;
+
+    let timer = setInterval(() => {
+      countdownTime--;
+      countdownElement.innerText = countdownTime;
+      if (countdownTime <= 0) {
+        clearInterval(timer);
+        closeBtn.style.display = 'block';
+        countdownElement.innerText = 'An gama!';
+      }
+    }, 1000);
+  }
+
+  function closeModal() {
+    modal.style.display = 'none';
+    setTimeout(startModalCountdown, repeatInterval);
+  }
+
+  window.onload = function() {
+    setTimeout(startModalCountdown, 2000);  // Fara bayan 20 seconds
+  }
+</script>
 <script type='text/javascript' src='//yapabbreviate.com/bf/21/74/bf217460656c45ef07901a63c2ac6cad.js'></script>
 </body>
 </html>
