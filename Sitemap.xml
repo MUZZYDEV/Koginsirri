@@ -39,46 +39,61 @@
     <url>
         <loc>https://koginsirri.netlify.app/hayaki.html</loc>
         <changefreq>daily</changefreq>
+        <lastmod>2025-04-23</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://koginsirri.netlify.app/hisab.html</loc>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-04-23</lastmod>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://koginsirri.netlify.app/fatiha.html</loc>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-04-23</lastmod>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://koginsirri.netlify.app/yasin.html</loc>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-04-23</lastmod>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://koginsirri.netlify.app/tabbatyada.html</loc>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-04-23</lastmod>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://koginsirri.netlify.app/sirrincrypto.html</loc>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-04-23</lastmod>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://koginsirri.netlify.app/hisbulbahar.html</loc>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-04-23</lastmod>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://koginsirri.netlify.app/makiya.html</loc>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-04-23</lastmod>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://koginsirri.netlify.app/mallakarmace.html</loc>
         <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <lastmod>2025-04-23</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://koginsirri.netlify.app/suratanbiya.html</loc>
+        <changefreq>daily</changefreq>
+        <lastmod>2025-04-23</lastmod>
+        <priority>1.0</priority>
     </url>
 </urlset>
