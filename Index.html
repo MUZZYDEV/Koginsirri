@@ -97,6 +97,29 @@
     </style>
 </head>
 <body>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC2nopS5qUedw2ZdALLzWWJaKM96P_USCU",
+    authDomain: "asararu-zallah.firebaseapp.com",
+    projectId: "asararu-zallah",
+    storageBucket: "asararu-zallah.firebasestorage.app",
+    messagingSenderId: "913831537563",
+    appId: "1:913831537563:web:2673bf3d9b5da456198f3e",
+    measurementId: "G-EFFN15H5X0"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
     <div class="header">
         <h1>KUNDIN <span class="header2">SIRRI</span></h1>
