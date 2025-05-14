@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "439083330350",
+    "project_id": "kogin-fc2a5",
+    "storage_bucket": "kogin-fc2a5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439083330350:android:d2db9185dad537688c28bf",
+        "android_client_info": {
+          "package_name": "app.netlify.koginsirri.twa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh2BKb4ipW2JjRxxemyk08Q02lUtlPrE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439083330350:android:ae11c42e479478ef8c28bf",
+        "android_client_info": {
+          "package_name": "com.muzzydev.kundinasararu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh2BKb4ipW2JjRxxemyk08Q02lUtlPrE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
