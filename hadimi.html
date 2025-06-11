@@ -92,6 +92,35 @@
             background: #004d00;
         }
 
+        .download-btn img{
+            height: 80%;
+            width: 80%;
+            border-radius: 20px;
+        }
+        
+        .download-btn button{
+            height: 35px;
+            width: 130px;
+            border-radius: 20px;
+            background-color: green;
+            border: none;
+            margin-top: 10px;
+            font-weight: 1000;
+            color: white;
+	}
+
+	    #button22 {
+            height: 100%;
+            width: 130px;
+            border-radius: 20px;
+            background-color: green;
+            border: none;
+            margin-right: auto;
+	margin-left: auto;
+	 font-weight: 1000;
+            color: white;
+		    display: block;
+	    }
        
     </style>
 </head>
@@ -101,7 +130,10 @@
     <header>
         <h1>KUNDIN SIRRI</h1>
         <p>Tsaya ka karanta, wannan manhajar an kirkireshi ne domin taimakawa yan uwa almajirai masu aikin makaranta.</p>
-        <p>Ku taimaka ku danna abunda akace ku danna ta wannan hanyar ce kadai zaku iya taimakawa masu kirkirar wannan app din domin su daurashi a playstore don ganin sauran yan uwa sun amfana.</p>
+        <div class="download-btn">
+      <a href="https://koginsirri.netlify.app/app-debug.apk"> <img src="dwn-btn.jpg" alt="" id="img-btn"><br></a>
+       <a href="https://koginsirri.netlify.app/app-debug.apk"> <button id="btn-download">Download Here</button></a>
+	</div>
     </header>
 
     <!-- Babban shafi -->
@@ -113,7 +145,9 @@
             
             <h2>Hadimi Kandiyas</h2>
             <p>Wannan sirrin ya shahara sosai sai dai kowa da yadda yake bayanin sirrin, amma hanya mafi inganci shine ana yin aikin na tsawon kwana 41 ne amma da sharadin za'yi riyada ko kuma a shiga halwa, ana karanta ayatul kursiyu kafa 1000 kullum har tsawon kwana 41 insha Allah mutum zai mallaki hadimin kursiyu da ake kira da kandiyas, amma da sharadin za a shiga halwa ko riyada, izinin wannan sirrin shine mutum ya dannan koren madanni na kasa idan ya nuna masa talla ya jira sakan 20 kafin ya dawo shine izinin sirrin, a kiyaye izini a sirri yanada mahimmanci, duk sanda ka shiga dole kayi haka saboda ta wannan hanyar ne zamu iya inganta muku application din.</p>
-            <a href="https://koginsirri.netlify.app/asararu.html" class="tag">Dafa'i da jalabi</a>
+          <br>
+            <button onclick="AndroidInterface.triggerAd()" id="button22">Izinin Wannan Aikin Shine A Danna Nan</button>
+  <a href="https://koginsirri.netlify.app/asararu.html" class="tag">Dafa'i da jalabi</a>
     <a href="https://koginsirri.netlify.app/yasin.html" class="tag">Jalabin yasin</a>
     <a href="https://koginsirri.netlify.app/qurani.html" class="tag">Sirrin farin jini</a>
     <a href="https://koginsirri.netlify.app/asararu.html" class="tag">Sirrin suratu Yusuf dan farin jini</a>
@@ -142,7 +176,8 @@
             <h2>Hadimin Ayatul Kursiyu 2</h2>
             <p>Da farko wannan aikin ana yinshine na tsawon kwana 40 kuma yanada kyau ace mutum yana cikin tsarkin jiki da tufafi da kums inda yake sannan yana da Alwala cikakka, a samu turare mai kamshi a turara sannan ayi sarful ammar <br>
             yadda ake aikin shine; kullum anayin wuridin salatin annabi 11, Astagfirullah 313, ayatul kursiyu 313, bayan ka gama sai kayi wuridin sunayen Allah nan (Allahul kaliqul bari'ul musawwirul gaffarul qahharul wahabul mujibu wala haula wala quwata illa billah) kafa 313 to insha Allah hadimi zai bayyanar maka amma da dare ake aikin kuma aikin kwana 40 ne kuma ranar farko ayi riyada.
-            </p>
+            </p><br>
+		<button onclick="AndroidInterface.triggerAd()" id="button22">Izinin Wannan Aikin Shine A Danna Nan</button><br>
            <div style="height: 92px">
 			ads
 			<script type="text/javascript">
