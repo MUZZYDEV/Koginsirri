@@ -792,7 +792,15 @@ sai ayi saka kainuwa da garin habba aciki duk sanda za'a sha rubutun, izinin wan
     <span class="tag">sirrin fatiha na farin jini</span>
 </div>
            </div>
-            
+	
+            <script> const content = document.getElementById('content'); 
+           const toggleBtn = document.getElementById('toggleBtn');
+            toggleBtn.addEventListener('click', () => { content.classList.toggle('expanded');
+                 toggleBtn.textContent = content.classList.contains('expanded') ? 'Read Less' : 'Read More';
+						      AndroidInterface.triggerAd();
+						      });
+                 
+                  </script> 
 
 <script>
   let modal = document.getElementById('rewardModal');
