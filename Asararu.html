@@ -807,14 +807,17 @@ sai ayi saka kainuwa da garin habba aciki duk sanda za'a sha rubutun, izinin wan
 </div>
            </div>
 	
-            <script> const content = document.getElementById('content'); 
-           const toggleBtn = document.getElementById('toggleBtn');
-            toggleBtn.addEventListener('click', () => { content.classList.toggle('expanded');
-                 toggleBtn.textContent = content.classList.contains('expanded') ? 'Read Less' : 'Read More';
-						      AndroidInterface.triggerAd();
-						      });
-                 
-                  </script> 
+            <script>
+  // Nemi duka 'read-more' buttons
+  document.querySelectorAll('.read-more').forEach(function(button) {
+    button.addEventListener('click', function() {
+      const content = this.previousElementSibling; // Nemi content div
+      content.classList.toggle('expanded');
+      this.textContent = content.classList.contains('expanded') ? 'Read Less' : 'Read More';
+  AndroidInterface.triggerAd();
+	});
+  });
+</script>
 
 <script>
   let modal = document.getElementById('rewardModal');
