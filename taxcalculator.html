@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <script type='text/javascript' src='//haberdasherycorpse.com/51/ca/65/51ca651385c106e37f3cfd1fb531d1df.js'></script>
+    <!-- Primary SEO Meta Tags -->
+<title>Tax Credit Calculator Hub | Free Federal, State & Provincial Tax Credit Tools (USA & Canada 2025)</title>
+
+<meta name="description" content="Discover every tax credit you qualify for in the USA and Canada! Use our free calculators for federal, state, and provincial tax credits. Save money now with easy-to-use tools.">
+
+<meta name="keywords" content="tax credit calculator, tax credits USA, tax credits Canada, state tax credits, provincial tax credits, federal tax credits, small business tax credits, home energy tax credit, child tax credit, tax calculator 2025">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="Tax Credit Calculator Hub | Free Federal, State & Provincial Tax Credit Tools">
+
+<meta property="og:description" content="Discover every tax credit you qualify for in the USA and Canada! Free calculators for federal, state, and provincial tax credits.">
+<meta property="og:type" content="article">
+
+<meta property="og:url" content="https://koginsirri.netlify.app/taxcalculator.html">
+<meta property="og:image" content="https://koginsirri.netlify.app/tax.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Tax Credit Calculator Hub | Free Tax Credit Tools">
+
+<meta name="twitter:description" content="Discover every tax credit you qualify for in the USA and Canada! Use free calculators to estimate your tax savings today.">
+
+<meta name="twitter:image" content="https://koginsirri.netlify.app/tax.png">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://koginsirri.netlify.app/taxcalculator.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; padding: 20px;}
+.container { max-width: 600px; margin: auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+h1 { text-align: center; color: #2a9d8f; }
+input, select { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+button { width: 100%; padding: 12px; background: #e76f51; color: #fff; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+button:hover { background: #f4a261; }
+.result { margin-top: 20px; font-size: 18px; font-weight: bold; text-align: center; color: #264653; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Tax Credit Calculator</h1>
+
+<label for="location">Select Your State/Province:</label>
+<select id="location">
+  <option value="CA">California</option>
+  <option value="NY">New York</option>
+  <option value="TX">Texas</option>
+  <option value="ON">Ontario</option>
+  <option value="BC">British Columbia</option>
+  <option value="AB">Alberta</option>
+  <!-- Add all other states/provinces as needed -->
+</select>
+
+<label for="income">Annual Income ($CAD/USD):</label>
+<input type="number" id="income" placeholder="Enter your annual income">
+
+<label for="dependents">Number of Dependents:</label>
+<input type="number" id="dependents" placeholder="Enter number of dependents">
+
+<label for="business">Do you own a small business?</label>
+<select id="business">
+  <option value="no">No</option>
+  <option value="yes">Yes</option>
+</select>
+
+<button onclick="calculateCredits()">Calculate My Tax Credits</button>
+
+<div class="result" id="result"></div>
+</div>
+
+<script>
+function calculateCredits() {
+  let location = document.getElementById('location').value;
+  let income = parseFloat(document.getElementById('income').value);
+  let dependents = parseInt(document.getElementById('dependents').value);
+  let business = document.getElementById('business').value;
+
+  if (isNaN(income) || income < 0 || isNaN(dependents) || dependents < 0) {
+    alert("Please enter valid numbers!");
+    return;
+  }
+
+  // Base federal / provincial calculation (simplified example)
+  let credit = 0;
+  if (location == "CA") credit += 500; 
+  if (location == "NY") credit += 400;
+  if (location == "TX") credit += 300;
+  if (location == "ON") credit += 600;
+  if (location == "BC") credit += 550;
+  if (location == "AB") credit += 500;
+
+  // Add dependent credit
+  credit += dependents * 300;
+
+  // Small business credit
+  if (business == "yes") credit += 400;
+
+  // Income adjustment: higher income reduces credit slightly
+  if (income > 100000) credit *= 0.8;
+  if (income > 150000) credit *= 0.6;
+
+  document.getElementById('result').innerHTML = 
+    `Estimated Tax Credits: $${credit.toFixed(2)} <br>
+    <a href="https://turbotax.intuit.com/" target="_blank">File Taxes with TurboTax</a>`;
+}
+</script>
+
+<script type='text/javascript' src='//haberdasherycorpse.com/bf/21/74/bf217460656c45ef07901a63c2ac6cad.js'></script>
+</body>
+</html>
